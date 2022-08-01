@@ -1,0 +1,19 @@
+{
+  "name": "complete-website-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhuntleypro/complete-website-template.git"
+  },
+  "author": "Darrien Huntley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhuntleypro/complete-website-template/issues"
+  },
+  "homepage": "https://github.com/dhuntleypro/complete-website-template#readme"
+}

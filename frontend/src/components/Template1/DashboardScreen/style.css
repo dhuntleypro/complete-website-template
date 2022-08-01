@@ -1,0 +1,27 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@3 00;400;500;600;700;800;900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@3 00;400;500;600;700;800;900&display=swap'); */
+
+body {
+  /* font-family: 'Poppins', sans-serif; */
+
+  --margin-xl: 4rem;
+  --margin-lg: 3rem;
+  --margin-md: 2rem;
+  --margin-sm: 1rem;
+  --margin-xs: 0.8rem;
+  --margin-xxs: 0.5rem;
+
+  --padding-xl: 4rem;
+  --padding-lg: 3rem;
+  --padding-md: 2rem;
+  --padding-sm: 1rem;
+  --padding-xs: 0.8rem;
+  --padding-xxs: 0.5rem;
+
+  overflow: hidden;
+  background: rgb(240, 244, 248);
+}
+
+.App {
+  display: flex;
+}

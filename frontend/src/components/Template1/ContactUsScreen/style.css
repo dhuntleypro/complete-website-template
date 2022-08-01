@@ -1,0 +1,55 @@
+.contactUsLabel {
+  color: 'blue';
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+  background: #55ffe5;
+  color: black;
+}
+
+div:nth-child(3) {
+  background: lightgreen;
+}
+
+.container {
+  width: 30%;
+  padding-right: 50px;
+  margin: 40px auto;
+  color: black;
+}
+
+.contact-box {
+  background: #fff;
+  display: flex;
+}
+
+.contact-left {
+  flex-basis: 60%;
+  padding: 40px 60px;
+  font-weight: bold;
+}
+
+.contact-right {
+  flex-basis: 40%;
+  padding: 40px;
+  background: #1c00b5;
+  color: #fff;
+}
+
+.h1 {
+  margin-bottom: 10px;
+}
+
+.cotainer p {
+  margin-bottom: 40px;
+} */

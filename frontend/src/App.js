@@ -1,31 +1,46 @@
-import React from 'react';
-import Product from './components/Product';
-import data from './data';
+import { BrowserRouter } from 'react-router-dom';
+import 'react-toastify/dist/ReactToastify.css';
+import { useState } from 'react';
+
+// Style
+import './styles/HomeScreen/home.scss';
+import './styles/HomeScreen/_mixins.scss';
+
+import RoutesController from './Routes';
+import Navbar from './components/Template1/DashboardScreen/Navbar/Navbar';
+
+import './components/Template1/DashboardScreen/style.css';
+
+import Container from './components/Template1/DashboardScreen/Container/Container';
+import RightNavbar from './components/Template1/DashboardScreen/RightNavbar/RightNavbar';
+import NavContext from './components/Template1/DashboardScreen/Context/NavContext';
+
 function App() {
+  const [nav, setNav] = useState(false);
+  const value = { nav, setNav };
+
   return (
-    <div className="grid-container">
-      <header className="row">
-        <div>
-          <a className="brand" href="/">
-            amazona
-          </a>
-        </div>
-        <div>
-          <a href="/cart">Cart</a>
-          <a href="/signin">Sign In</a>
-        </div>
-      </header>
+    <BrowserRouter>
       <main>
-        <div>
-          <div className="row center">
-            {data.products.map((product) => (
-              <Product key={product._id} product={product}></Product>
-            ))}
+        {window.location.pathname.indexOf('/admin') ? (
+          <RoutesController />
+        ) : (
+          <div className="App">
+            <NavContext.Provider value={value}>
+              <Navbar />
+              <Container
+                stickyNav={<RightNavbar />}
+                content={<RoutesController />}
+              />
+            </NavContext.Provider>
           </div>
-        </div>
+        )}
       </main>
-      <footer className="row center">All right reserved</footer>
-    </div>
+
+      {/* <footer>
+        <div className="text-center">All rights reserved</div>
+      </footer> */}
+    </BrowserRouter>
   );
 }
 
